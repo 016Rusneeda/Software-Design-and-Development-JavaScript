@@ -76,9 +76,46 @@ JavaScript สามารถเพิ่มลงในเว็บเพจไ
    - มีปุ่มเมื่อคลิกแล้วจะแสดงข้อความที่กรอกในช่องข้อความ  (สามารถใช้ document.getElementById('id ของ textbox').value เพื่อดึงข้อมูลในช่อง)
 ### บันทึกผลการทดลอง 
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทดลอง JavaScript</title>
+</head>
+<body>
+    <!--inline-->
+    <button onclick="alert('รุสนีดา กูวิง')">ปุ่ม 1</button>
+    
+    <!--internal-->
+    <button id="btn2">ปุ่มที่2</button>
+
+    
+    <button id="btn3" onclick="hello3();">ปุ่มที่ 3</button>
+    
+    
+    <script>
+    document.getElementById('btn2').onclick=function() {alert('19 กุมภาพันธ์ 2568')};</script>
+    <script src="script.js"></script>
+
+    <p>
+        <input type="=text"id="textbox">
+        <button onclick="show () ">แสดงข้อความ</button>
+    </p>
+    <p id="output"></p>
+</body>
+</html>
 ```
-[รูปผลการทดลองที่ 1]
+```js
+function hello3(){alert('11.15 นาที');}
+
+function show(){
+    let text=document.getElementById("textbox").value;
+    document.getElementById("output").innerText="ข้อความที่ป้อน: "+text;
+};
+```
+![image](https://github.com/user-attachments/assets/bd8970ce-895f-4671-bc2e-26513841d8f1)
+
   
 ## การทดลองที่ 2: พื้นฐาน JavaScript
 ### 2.1 การประกาศตัวแปรและชนิดข้อมูล
