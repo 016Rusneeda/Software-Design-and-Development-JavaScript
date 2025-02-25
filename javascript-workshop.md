@@ -256,9 +256,57 @@ number /= 2;          // เท่ากับ number = number / 2
 
 ### บันทึกผลการทดลอง 2.2
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การคำนวนพื้นฐาน</title>
+</head>
+<body>
+    
+    <p>
+        <label for="no1">คะแนนวิชาที่ 1</label>
+        <input type="number"id="no1"><br>
+        <label for="no2">คะแนนวิชาที่ 2</label>
+        <input type="number"id="no2"><br>
+        <label for="no3">คะแนนวิชาที่ 3</label>
+        <input type="number"id="no3"><br>
+        <button type="button" onclick="calculate()">หาค่าเฉลี่ย</button>
+    </p>
+    <p id="out"></p>
+
+    <hr><p>
+        <label for="namepro">ชื่อสินค้า</label>
+        <input type="text"id="namepro"><br>
+        <label for="price">ราคา</label>
+        <input type="number"id="price"><br>
+        <button type="button" onclick="calculatevat()">คำนวณราคาสินค้าที่รวม VAT 7%</button>
+    </p>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
 ```
-[รูปผลการทดลองที่ 2.2]
+```js
+function calculate(){
+    let no1=parseFloat(document.getElementById('no1').value);
+    let no2=parseFloat(document.getElementById('no2').value);
+    let no3=parseFloat(document.getElementById('no3').value);
+    let avg = (no1+no2+no3)/3;
+
+    document.getElementById('out').innerText="ค่าคะแนนเฉลี่ย : "+avg;
+};
+
+function calculatevat(){
+    let namepro =document.getElementById("namepro").value;
+    let price=parseFloat(document.getElementById("price").value);
+    let calvat=(price*0.07)+price;
+    document.getElementById("result").innerText=namepro + "Vat : " + calvat
+}
+```
+![image](https://github.com/user-attachments/assets/e2aca5d6-5081-40f1-bfd3-48486960aa8e)
+
 
 ### 2.3 การควบคุมการทำงาน
 
