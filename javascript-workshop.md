@@ -321,9 +321,60 @@ for (let i = 1; i <= 5; i++) {
 
 ### บันทึกผลการทดลอง 2.3
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.3 การควบคุมการทำงาน</title>
+</head>
+<body>
+    <script src="script2.js"></script>
+</body>
+</html>
 ```
-[รูปผลการทดลองที่ 2.3]
+```js
+let num = 9;
+if(num%2===0){
+    console.log(num + "คือเลขคู่");}
+else{
+    console.log(num + "คือเลขคี่");
+}
+
+console.log("สูตรคูณแม่2 :");
+for(let i =1; i<= 12;i++){
+    console.log(`2 x ${i} = ${2*i}`);
+}
+
+console.log('สูตรคูณแม่3 : ');
+let n =1;
+while (n<=12){
+    console.log(`3 x ${n} = ${3*n}`);
+    n++;
+}
+
+console.log('นับถอยหลังจาก 10 ถึง 1');
+for (let i = 10; i>=1; i--){
+    console.log(i);
+}
+
+let age=19
+if(age >= 0 && age <=12){
+    console.log(age + " คือวัยเด็ก");}
+else if (age >=13 && age <=19){
+    console.log(age + "คือวัยรุ่น")
+}
+else {
+    console.log(age + "คือวัยผุ้ใหญ่")
+}
+
+
+
+```
+![image](https://github.com/user-attachments/assets/4983e214-8801-4875-91a5-98f6c1a9c140)
+![image](https://github.com/user-attachments/assets/53e69087-ab43-4de2-be28-d35f356df910)
+
+
 
 ### 2.4 Functions และ Arrow Functions
 
