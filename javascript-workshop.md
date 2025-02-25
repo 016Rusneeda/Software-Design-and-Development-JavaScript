@@ -171,9 +171,40 @@ let person = {
 
 ### บันทึกผลการทดลอง 2.1
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
 ```
-[รูปผลการทดลองที่ 2.1]
+```js
+let person = {
+    id:"67030195",
+    name: "รุสนีดา กูวิง",
+    scoreMid: 45,
+    scorefinal:60,
+    
+};
+let student={
+    stuID:"Rusneeda",
+    stuname:'67030195',
+    studepartment:'computer technology',
+    stuGrade:'4.00'
+};
+
+console.log(person);
+console.log(student);
+```
+![image](https://github.com/user-attachments/assets/96ab4fb0-53bb-44ab-84e8-7bfc6428343e)
+
 
 
 ### 2.2 การดำเนินการทางคณิตศาสตร์
