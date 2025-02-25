@@ -602,9 +602,54 @@ process(function() {
 
 ### บันทึกผลการทดลอง 2.4.1
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทดสอบ Functions</title>
+</head>
+<body>
+    <script src="scriptfunc.js"></script>
+</body>
+</html>
 ```
-[รูปผลการทดลองที่ 2.4.1]
+```js
+function calculateBMI(height,weight){
+    let BMI = weight/(height*height);
+    return BMI.toFixed(3);
+}
+console.log("BMI : ",calculateBMI(1.60,44));
+
+
+function people (name,age){
+    let message ="";
+    if (age<13){
+        message = "สบายดีไหมน้อง" + name;
+    }else if (age <20 ){
+        message = "โหลล บายดีบ่เพื่อน"+name;
+    }else {
+        message = "พี่"+name+"สวัสดีค่ะ";
+    }
+    console.log(message);
+}
+people("กล้า",7);
+people("แป้ง",19);
+people("โอม",30);
+
+function CheckPass(password){
+    if (password.length < 8){
+        return "รหัสผ่านมีความยาวน้อยกว่า 8 ตัว"
+    }else{
+        return "รหัสผ่านมีความยาวมากกว่า 8 ตัว"
+    }
+}
+console.log(CheckPass("65432"));
+console.log(CheckPass("987654321"));
+
+```
+![image](https://github.com/user-attachments/assets/07dc8776-c788-46da-9c23-bc251c844c31)
+
 
 
 
